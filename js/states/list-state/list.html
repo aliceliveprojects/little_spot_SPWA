@@ -1,0 +1,26 @@
+<div>
+  <nav>
+    <form ng-submit="vm.termUpdate(vm.term)">
+      <input class="form-control form-control-lg" style="border-radius: 0;" placeholder="term?" type="text" ng-model="vm.term">
+    </form>
+  </nav>
+
+  <div>
+    <div ng-hide="vm.noItems()">
+      <ul class="list-group">
+        <li class="list-group-item" style="border-radius: 0;" ng-click="vm.onItemSelected($index)" ng-repeat="item in vm.items">
+          {{item.artist}}:{{item.name}}
+        </li>
+      </ul>
+    </div>
+
+    <div ng-show="vm.noItems()">
+      <h1 class="text-center">No items yet!</h1>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <button ng-click="vm.authenticate()" style="border-radius: 0;" class="btn btn-primary btn-lg btn-block">Authenticate</button>
+  </div>
+</div>
