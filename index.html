@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/little_spot_SPWA">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Comment out the line below to run the app -->
-    <base href="/little_spot_SPWA/">
 
     <!-- Content delivery network For bootstrap 4.4.1 
         Uncomment and comment out line 10 to use the 
@@ -27,22 +25,22 @@
 
 
     <!-- MODULES -->
-    <script src="js/modules/auth.module.js"></script>
-    <script src="js/modules/main.module.js"></script>
+    <script src="js/app_specific/authenticate/auth.module.js"></script>
+    <script src="js/app_specific/main/main.module.js"></script>
 
     <!-- SERVICES -->
-    <script src="js/services/authenticate.service.js"></script>
-    <script src="js/services/moment.service.js"></script>
-    <script src="js/services/main.service.js"></script>
-    <script src="js/services/spotify.service.js"></script>
-    <script src="js/services/credentials.service.js"></script>
+    <script src="js/app_specific/authenticate/authenticate.service.js"></script>
+    <script src="js/wrappers/format/moment.service.js"></script>
+    <script src="js/app_specific/main/main.service.js"></script>
+    <script src="js/app_specific/spotify/spotify.service.js"></script>
+    <script src="js/app_specific/authenticate/credentials.service.js"></script>
 
     <!-- CONTROLLER -->
-    <script src="js/states/intro-auth/authenticate.intro.controller.js"></script>
-    <script src="js/states/secure-auth/authenticate.secure.controller.js"></script>
-    <script src="js/states/list-state/list.controller.js"></script>
-    <script src="js/states/update-state/update.controller.js"></script>
-    <script src="js/states/detail-state/detail.controller.js"></script>
+    <script src="js/app_specific/authenticate/authenticate.intro.controller.js"></script>
+    <script src="js/app_specific/authenticate/authenticate.secure.controller.js"></script>
+    <script src="js/app_specific/main/list.controller.js"></script>
+    <script src="js/app_specific/main/update.controller.js"></script>
+    <script src="js/app_specific/main/detail.controller.js"></script>
 
     <script src="js/app.js"></script>
     <title>Little Spot Auth</title>
@@ -59,7 +57,7 @@
       })();
     </script>
     <nav class="text-center">
-      <h1>Little Spot App</h1>
+      <h1>Little Spot SPWA</h1>
     </nav>
     <ui-view></ui-view>
   </body>

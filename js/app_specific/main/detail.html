@@ -1,0 +1,16 @@
+<div>
+  <nav class="text-center">
+    <h1>{{vm.term}}</h1>
+  </nav>
+
+    <div class="text-center mt-2">
+      <h1 class="mt-2">{{vm.detail.artist}}</h1>
+      <h3 class="mt-2">{{vm.detail.name}}</h3>
+      <h4 class="mt-2 mb-4">{{vm.detail.album}}</h4>
+      <img ng-src="{{vm.detail.image}}" class="albumArt">
+    </div>
+
+  <footer class="footer">
+    <button class="btn btn-primary btn-lg btn-block" ng-click="vm.done()"></button>
+  </footer>
+</div>
