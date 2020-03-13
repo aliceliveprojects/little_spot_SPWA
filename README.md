@@ -2,6 +2,8 @@
 
 #### Implementation of the Single Page Web App described in [little_spot_app](<https://github.com/aliceliveprojects/little_spot_app>)
 
+**NOTE:** When authenticated unlike it's template application, little spot spwa does not go to the 'success' page it goes straight back to list.
+
 Little Spot App lets you do three things:
 
 1. Request a Spotify **access token**.
